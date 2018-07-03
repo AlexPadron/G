@@ -46,7 +46,8 @@ alias gsw='gs | grep "modified: " || go'
 
 # G Diff Diff. Get the changeset between the current head and most recent
 # commit that was diffed to arc. Note that this command makes a network request
-# and so may take half a second or so.
+# and so may take half a second or so. Also note that this method assumes your
+# normal commits have message 'z'
 alias gdd='python '${PATH_TO_G}/get_diff_changelog.py
 # Git Status equivalent of the above command
 alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
@@ -68,7 +69,10 @@ alias i='inenv'
 alias d='deactivate'
 
 ##############################
-###### Misc aliases ##########
+###### Coding aliases ########
 ##############################
 
 alias p='python'
+# Alias to set up local settings and run a python env. This is a bit
+# project specific depending on where settings files live
+alias sp='SETTINGS_PATH=../settings/settings.local.json python -m'
