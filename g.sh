@@ -76,3 +76,5 @@ alias p='python'
 # Alias to set up local settings and run a python env. This is a bit
 # project specific depending on where settings files live
 alias sp='SETTINGS_PATH=../settings/settings.local.json python -m'
+# Default testing command
+alias pt='python -m pytest'
