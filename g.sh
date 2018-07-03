@@ -58,3 +58,17 @@ alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
 alias gl='arc lint'
 alias gf='arc diff'
 alias gnd='arc land'
+
+
+##############################
+###### Inenv aliases #########
+##############################
+
+alias i='inenv'
+alias d='deactivate'
+
+##############################
+###### Misc aliases ##########
+##############################
+
+alias p='python'
