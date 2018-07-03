@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 
 output = subprocess.check_output(['arc', 'which']).decode('utf-8')
 
@@ -50,12 +51,12 @@ if len(all_commit_hashes) == 0:
     exit(1)
 else:
     # Check cli for status command
-    status = sys.argv[1] == 'status'
+    status = len(sys.argv) > 1 and sys.argv[1] == 'status'
 
     if status:
-        diff_command = 'gds {}'
+        diff_command = 'git diff --stat {}'
     else:
-        diff_command = 'gd {}'
+        diff_command = 'git diff {}'
 
     # Commit hashes are ordered so the first is the most recent
     os.system(diff_command.format(all_commit_hashes[0]))

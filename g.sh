@@ -46,7 +46,7 @@ alias gsw='gs | grep "modified: " || go'
 
 # G Diff Diff. Get the changeset between the current head and most recent
 # commit that was diffed to arc. Note that this command makes a network request
-# and so may take half a second or so
+# and so may take half a second or so.
 alias gdd='python '${PATH_TO_G}/get_diff_changelog.py
 # Git Status equivalent of the above command
 alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
