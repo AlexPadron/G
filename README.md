@@ -11,6 +11,10 @@ as possible, i.e. `gs` being `git status`, it is still difficult to memorize the
 I've been incrementally adding them, and that is probably the easiest way to use
 them.
 
+### Requirements
+
+Any version of Python, no external packages needed
+
 ### Future Work
 
 If you have other aliases, for git, arcanist or another tool, let me know!
