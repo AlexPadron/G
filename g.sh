@@ -52,6 +52,9 @@ alias gdd='python '${PATH_TO_G}/get_diff_changelog.py
 # Git Status equivalent of the above command
 alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
 
+# G Shortlog. Command args are [from_commit, rel_path, to_commit]. [rel_path]
+# is optional and defaults to ['.']. [to_commit] is optional and defaults to
+# ['origin/master']
 alias gsl='python '${PATH_TO_G}/shortlog.py
 
 ##############################
