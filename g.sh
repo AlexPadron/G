@@ -52,6 +52,8 @@ alias gdd='python '${PATH_TO_G}/get_diff_changelog.py
 # Git Status equivalent of the above command
 alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
 
+alias gsl='python '${PATH_TO_G}/shortlog.py
+
 ##############################
 ###### Arc aliases ###########
 ##############################
