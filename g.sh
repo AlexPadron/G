@@ -2,6 +2,7 @@
 # from it, cd to the parent, and pwd to get the full path
 PATH_TO_G="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+
 ##############################
 ###### Git aliases ###########
 ##############################
@@ -78,8 +79,5 @@ alias d='deactivate'
 ##############################
 
 alias p='python'
-# Alias to set up local settings and run a python env. This is a bit
-# project specific depending on where settings files live
-alias sp='SETTINGS_PATH=../settings/settings.local.json python -m'
-# Default testing command
 alias pt='python -m pytest'
+alias pp='python -m json.tool'
