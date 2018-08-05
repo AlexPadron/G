@@ -81,3 +81,10 @@ alias d='deactivate'
 alias p='python'
 alias pt='python -m pytest'
 alias pp='python -m json.tool'
+
+##############################
+###### S3 aliases ############
+##############################
+
+alias sl='s3cmd ls'
+alias sg='s3cmd get'
