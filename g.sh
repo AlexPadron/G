@@ -63,7 +63,7 @@ alias gsl='python '${PATH_TO_G}/shortlog.py
 ##############################
 
 alias gl='arc lint'
-alias gf='arc diff'
+alias gf='git commit --allow-empty -m "PREDIFF_PLACEHOLDER"; arc diff'
 alias gnd='arc land'
 
 
