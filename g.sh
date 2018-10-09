@@ -11,6 +11,7 @@ alias g='git'
 alias ga='git add'
 alias go='git checkout'
 alias gb='git branch'
+alias gp='git pull'
 
 # Since we are working on diff-level granularity, most of the time commit
 # messages aren't used, so they can default to 'z'
@@ -62,9 +63,9 @@ alias gsl='python '${PATH_TO_G}/shortlog.py
 ###### Arc aliases ###########
 ##############################
 
-alias gl='arc lint'
-alias gf='git commit --allow-empty -m "PREDIFF_PLACEHOLDER"; arc diff'
-alias gnd='arc land'
+alias l='arc lint'
+alias f='git commit --allow-empty -m "PREDIFF_PLACEHOLDER"; arc diff'
+alias nd='arc land'
 
 
 ##############################
