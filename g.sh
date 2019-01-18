@@ -82,6 +82,7 @@ alias d='deactivate'
 alias p='python'
 alias pt='python -m pytest'
 alias pp='python -m json.tool'
+alias u='pip install --upgrade'
 
 ##############################
 ###### S3 aliases ############
