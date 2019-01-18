@@ -89,3 +89,9 @@ alias pp='python -m json.tool'
 
 alias sl='s3cmd ls'
 alias sg='s3cmd get'
+
+##############################
+###### Jsonnet aliases #######
+##############################
+
+alias jf="jsonnet fmt --comment-style s --string-style d -i"
