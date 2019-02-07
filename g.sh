@@ -32,7 +32,6 @@ alias gds='git diff --stat'
 # messing around. Also potentially bad because it can hide files
 alias gs='git status -uno'
 
-
 ##############################
 ###### Diff aliases ##########
 ##############################
@@ -76,7 +75,7 @@ alias i='inenv'
 alias d='deactivate'
 
 ##############################
-###### Coding aliases ########
+###### Python aliases ########
 ##############################
 
 alias p='python'
@@ -89,3 +88,16 @@ alias pp='python -m json.tool'
 
 alias sl='s3cmd ls'
 alias sg='s3cmd get'
+
+##############################
+###### Kubectl Aliases #######
+##############################
+
+alias k='kubectl -n'
+
+##############################
+###### Pipenv Aliases ########
+##############################
+alias pe='pipenv'
+alias pl='pipenv lock'
+alias psl='pipenv install --skip-lock'
