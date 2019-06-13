@@ -13,6 +13,9 @@ alias go='git checkout'
 alias gb='git branch'
 alias gp='git pull'
 
+# CD to the top level root of a git repository
+alias gt='cd $(git rev-parse --show-toplevel)'
+
 # Since we are working on diff-level granularity, most of the time commit
 # messages aren't used, so they can default to 'z'
 alias gc='git commit -m "z"'
