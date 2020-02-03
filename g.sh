@@ -114,3 +114,17 @@ alias psl='pipenv install --skip-lock'
 ##############################
 
 alias jf="jsonnet fmt --comment-style s --string-style d -i"
+
+##############################
+###### Docker aliases ########
+##############################
+
+alias dd="docker"
+alias cm="docker-compose"
+
+##############################
+###### Bash aliases ##########
+##############################
+
+alias l="ls -la"
+alias c="clear"
