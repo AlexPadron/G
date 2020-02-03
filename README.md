@@ -1,6 +1,7 @@
 ## G
-Fast aliases for arcanist and git. Saves time and mental effort on commands that
-get run all the time. It is called G because when I started I only had git aliases.
+Fast aliases for Python, Git, and a few other tools. 
+Saves time and mental effort on commands that get run all the time. 
+It is called G because when I started I only had git aliases.
 
 ### To use
 
