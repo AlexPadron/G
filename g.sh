@@ -61,6 +61,9 @@ alias gdds='python '${PATH_TO_G}/get_diff_changelog.py' status'
 # ['origin/master']
 alias gsl='python '${PATH_TO_G}/shortlog.py
 
+
+alias gcv='python '${PATH_TO_G}/checkout_version.py
+
 ##############################
 ###### Arc aliases ###########
 ##############################
