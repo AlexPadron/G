@@ -131,3 +131,10 @@ alias cm="docker-compose"
 
 alias l="ls -la"
 alias c="clear"
+
+##############################
+###### Docker aliases ########
+##############################
+
+# Start a local postgres instance in Docker
+alias start_postgres="docker run -p 5432:5432 --name some-postgres -e POSTGRES_PASSWORD=password -d postgres"
