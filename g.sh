@@ -139,3 +139,4 @@ alias c="clear"
 # Start common services using docker and expose default ports
 alias start_postgres="docker run -p 5432:5432 --name some-postgres -e POSTGRES_PASSWORD=password -d postgres"
 alias start_redis="docker run -p 6379:6379 --name some-redis -d redis"
+alias start_rmq="docker run -p 5672:5672 -p 15672:15672 -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management"
