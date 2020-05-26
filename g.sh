@@ -72,14 +72,6 @@ alias l='arc lint'
 alias f='git commit --allow-empty -m "PREDIFF_PLACEHOLDER"; arc diff'
 alias nd='arc land'
 
-
-##############################
-###### Inenv aliases #########
-##############################
-
-alias i='inenv'
-alias d='deactivate'
-
 ##############################
 ###### Python aliases ########
 ##############################
