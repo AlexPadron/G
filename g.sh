@@ -133,3 +133,13 @@ alias start_postgres="docker run -p 5432:5432 --name some-postgres -e POSTGRES_P
 alias start_redis="docker run -p 6379:6379 --name some-redis -d redis"
 alias start_rmq="docker run -p 5672:5672 -p 15672:15672 -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management"
 alias start_es="docker run -p 9200:9200 -p 9300:9300 -e \"discovery.type=single-node\" -d docker.elastic.co/elasticsearch/elasticsearch:6.8.9"
+
+function start_kafka {
+    docker network create kafka-net --driver bridge
+    docker run -d --name some-zookeeper -p 2181:2181 --network kafka-net -e ALLOW_ANONYMOUS_LOGIN=yes bitnami/zookeeper:latest
+    docker run -d --name \
+	   kafka-server1 --network kafka-net -e ALLOW_PLAINTEXT_LISTENER=yes \
+	   -e KAFKA_CFG_ZOOKEEPER_CONNECT=some-zookeeper:2181 \
+	   -e KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 \
+	   -p 9092:9092 bitnami/kafka:latest
+}
