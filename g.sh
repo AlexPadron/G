@@ -124,8 +124,12 @@ alias cm="docker-compose"
 alias l="ls -la"
 alias c="clear"
 
+function up() {
+  cd $(printf "%.s../" $(seq 1 $1));
+}
+
 ##############################
-###### Docker aliases ########
+### Docker service aliases ###
 ##############################
 
 # Start common services using docker and expose default ports
