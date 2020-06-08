@@ -147,3 +147,7 @@ function start_kafka {
 	   -e KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 \
 	   -p 9092:9092 bitnami/kafka:latest
 }
+
+# To use this, run "BOOTSTRAP_URL=.... start_akhq"
+# and visit localhost:8080 in the browser
+alias start_akhq="docker-compose -f $PATH_TO_G/akhq.yaml up -d"
