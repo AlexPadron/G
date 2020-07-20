@@ -69,6 +69,7 @@ alias gcv='python '${PATH_TO_G}/checkout_version.py
 ##############################
 
 alias l='arc lint'
+alias ad='arc diff'
 alias f='git commit --allow-empty -m "PREDIFF_PLACEHOLDER"; arc diff'
 alias nd='arc land'
 
@@ -81,13 +82,14 @@ alias pm='python -m'
 alias pt='python -m pytest'
 alias pp='python -m json.tool'
 alias u='pip install --upgrade'
+alias bp='bpython'
 
 ##############################
 ###### S3 aliases ############
 ##############################
 
-alias sl='s3cmd ls'
-alias sg='s3cmd get'
+alias sl='aws s3 ls'
+alias sg='aws s3 get'
 
 ##############################
 ###### Kubectl Aliases #######
@@ -108,7 +110,7 @@ alias psl='pipenv install --skip-lock'
 ###### Jsonnet aliases #######
 ##############################
 
-alias jf="jsonnet fmt --comment-style s --string-style d -i"
+alias jf="jsonnetfmt --comment-style s --string-style d -i"
 
 ##############################
 ###### Docker aliases ########
